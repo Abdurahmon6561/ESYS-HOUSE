@@ -37,8 +37,8 @@ const Layout = () => {
         Войти
       </button>
       <button
-            onClick={() => (window.location.href = "https://gohouse.uz/demo")}
-            className="p-2 rounded-2xl text-white border-2 transition-transform ease-in-out transform border-green-500 hidden md:block"
+            onClick={() => (window.location.href = "https://gohouse.uz")}
+            className="bg-green-500 hover:bg-green-600 p-2 rounded-2xl text-white border-2 transition-transform ease-in-out transform border-green-500 hidden md:block"
           >
             Демо-доступ
           </button>
@@ -91,8 +91,8 @@ const Layout = () => {
             Войти
           </button>
           <button
-            onClick={() => (window.location.href = "https://gohouse.uz/demo")}
-            className="w-full mt-4 p-2 rounded-2xl text-white border-2 transition-transform ease-in-out transform border-green-500"
+            onClick={() => (window.location.href = "https://gohouse.uz")}
+            className="bg-green-500 hover:bg-green-600 w-full mt-4 p-2 rounded-2xl text-white border-2 transition-transform ease-in-out transform border-green-500"
           >
             Демо-доступ
           </button>
