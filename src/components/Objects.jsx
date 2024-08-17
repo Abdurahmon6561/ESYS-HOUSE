@@ -1,28 +1,7 @@
 import Objects_image from "../../public/objects.jpg";
-import { useEffect, useState } from 'react';
 
 const Objects = () => {
-  const [isImageVisible, setIsImageVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsImageVisible(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
-
-    const imageElement = document.getElementById('prezentation-image');
-    if (imageElement) {
-      observer.observe(imageElement);
-    }
-
-    return () => {
-      if (imageElement) {
-        observer.unobserve(imageElement);
-      }
-    };
-  }, []);
+ 
 
   return (
     <div className="bg-slate-100 flex justify-around h-[650px] mt-[170px] mb-[120px]">
@@ -44,7 +23,7 @@ const Objects = () => {
       </div>
       <img
         id="prezentation-image"
-        className={`mt-[150px] w-[450px] h-[300px] ${isImageVisible ? 'slide-up' : ''}`}
+        className={`mt-[150px] w-[450px] h-[300px]`}
         src={Objects_image}
         alt="Prezentation image"
       />

@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <div className="w-screen p-10 h-[50px] flex items-center justify-between">
       <div>
-        <img className="w-[120px] cursor-pointer" src={Logo} alt="Logo" />
+        <img className="w-[150px] cursor-pointer" src={Logo} alt="Logo" />
       </div>
       <div className="hidden md:flex flex-1 justify-center">
         <ul className="flex space-x-4">
