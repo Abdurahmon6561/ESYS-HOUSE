@@ -127,7 +127,7 @@ const Layout = () => {
           </ul>
         </div>
         <div className="flex space-x-2 ml-[-60px]">
-          <a href="tel:+998711234567" className=" flex items-center">
+          <a href="tel:+998712001133" className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
