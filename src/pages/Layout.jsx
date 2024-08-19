@@ -58,7 +58,7 @@ const Layout = () => {
         )}
       </button>
       <div className={`fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
-        <div className="flex justify-end p-4">
+        <div className="flex ml-[167px] mt-[2px] p-6">
           <button onClick={() => setIsMenuOpen(false)} className="text-white">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
