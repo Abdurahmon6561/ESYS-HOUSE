@@ -25,14 +25,8 @@ const Prezentation = () => {
   }, []);
 
   return (
-    <div className="flex justify-around mt-[180px] mb-[150px]">
-      <img
-        id="prezentation-image"
-        className={`w-[450px] h-[300px] ${isImageVisible ? 'slide-up' : ''}`}
-        src={Pre}
-        alt="Prezentation image"
-      />
-      <div>
+    <div className="flex flex-col md:flex-row items-center justify-around mt-[180px] mb-[150px]">
+      <div className="flex flex-col items-center md:items-start md:order-1 order-2 text-center md:text-left">
         <h1 className="mb-[20px] text-green-400 font-semibold text-2xl">ПРЕЗЕНТАЦИЯ</h1>
         <p className="text-3xl font-medium">Удобный инструмент для презентации</p>
         <p className="p-2 text-xl opacity-55 font-medium mt-[30px]">
@@ -48,6 +42,12 @@ const Prezentation = () => {
           позволит Вам быть более продуктивным.
         </p>
       </div>
+      <img
+        id="prezentation-image"
+        className={`w-full md:w-[450px] h-auto md:h-[300px] mt-8 md:mt-0 ${isImageVisible ? 'slide-up' : ''}`}
+        src={Pre}
+        alt="Prezentation image"
+      />
     </div>
   );
 };
