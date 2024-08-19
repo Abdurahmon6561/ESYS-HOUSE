@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import '../index.css'; // Import your CSS file
+import '../index.css';
 
 const AboutProject = () => {
   const [isVisible, setIsVisible] = useState(false);
