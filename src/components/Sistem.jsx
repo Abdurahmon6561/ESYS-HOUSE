@@ -1,28 +1,7 @@
 import All from "../../public/all.png";
-import { useEffect, useState } from 'react';
 
 const Sistem = () => {
-  const [isImageVisible, setIsImageVisible] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsImageVisible(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
-
-    const element = document.getElementById('sistem-image');
-    if (element) {
-      observer.observe(element);
-    }
-
-    return () => {
-      if (element) {
-        observer.unobserve(element);
-      }
-    };
-  }, []);
 
   return (
     <div id="sistem" className="bg-slate-100 flex flex-col md:flex-row items-center justify-around h-auto md:h-[650px] mt-24 md:mt-[170px] mb-24 md:mb-[120px]">
@@ -38,7 +17,7 @@ const Sistem = () => {
       </div>
       <img
         id="sistem-image"
-        className={`w-full md:w-[600px] h-auto md:h-[350px] mt-8 md:mt-[150px] ${isImageVisible ? 'fade-in-right' : ''}`}
+        className="w-full md:w-[600px] h-auto md:h-[350px] mt-8 md:mt-[150px]"
         src={All}
         alt="Sistem image"
       />
