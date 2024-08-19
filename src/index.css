@@ -50,4 +50,59 @@
     animation: slideUp 1s ease-out forwards;
   }
   
+  /* Animation line */
+/* 1 */
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
   
+  .animate-draw path {
+    
+    animation: draw 5s linear forwards;
+  }
+
+  
+
+
+  /* 2 */
+/* 
+  .lines {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(black, black), radial-gradient(circle at top left, black, black);
+    background-size: 5px 100%, 100% 5px;
+    background-repeat: no-repeat;
+    animation: move 2s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0, 0 0;
+    }
+    100% {
+      background-position: 100% 100%, 100% 100%;
+    }
+  } */
+  
+
+
+   /* 3 */
+
+   /* @keyframes dash {
+    from {
+      stroke-dashoffset: 3000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .animate-draw {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: dash 5s linear infinite;
+  }
+   */

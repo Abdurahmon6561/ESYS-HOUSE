@@ -1,5 +1,4 @@
 import Layout from "./Layout";
-import Backgroung_image from "../../public/bg-image.jpg";
 import AboutProject from "../components/AboutProject";
 import Sistem from "../components/Sistem";
 import Prezentation from "../components/Prezentation";
@@ -10,15 +9,10 @@ import Sale from "../components/Sale";
 
 const Home = () => {
   return (
-    <div className="w-screen h-screen overflow-x-hidden">
-      <div
-        className="w-screen h-screen bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${Backgroung_image})`,
-        }}
-      >
-        <Layout />
-      </div>
+    <div>
+      <div className="w-screen h-screen overflow-x-hidden">
+      <Layout />
+   
       <div>
         <AboutProject />
         <Sistem/>
@@ -26,6 +20,7 @@ const Home = () => {
         <Objects/>
         <Sale/>
       </div>
+    </div>
     </div>
   );
 };
