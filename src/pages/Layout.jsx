@@ -79,7 +79,7 @@ const Layout = () => {
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className="text-white p-2 font-semibold cursor-pointer relative group">
-            +998 71 123 45 67
+            +998 71 123 45 77
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
           </li>
         </ul>
