@@ -65,7 +65,7 @@ const Layout = () => {
             </svg>
           </button>
         </div>
-        <ul className="flex flex-col p-4 space-y-4">
+        <ul className="flex flex-col mt-[-20px] p-4 space-y-4">
           <li className="text-white p-2 font-semibold cursor-pointer relative group">
             О проекте
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
