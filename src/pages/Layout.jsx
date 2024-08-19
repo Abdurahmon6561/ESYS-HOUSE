@@ -101,7 +101,6 @@ const Layout = () => {
         </svg>
       </div>
 
-      {/* Main Content */}
       <div className="relative z-10 w-screen p-10 flex items-center justify-between">
         <div>
           <img className="w-[170px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110" src={Logo} alt="Logo" />
@@ -229,7 +228,6 @@ const Layout = () => {
               Тарифы
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </li>
-
             <div className=" flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
