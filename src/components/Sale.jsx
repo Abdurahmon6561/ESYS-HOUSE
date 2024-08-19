@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import Shaxmat from '../../public/shaxmat.jpg'; // Adjust the path if necessary
+import Shaxmat from '../../public/shaxmat.jpg';
 
 const Sale = () => {
   const [isImageVisible, setIsImageVisible] = useState(false);
