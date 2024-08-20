@@ -103,21 +103,21 @@ const Layout = () => {
 
       <div className="relative z-10 w-screen p-10 flex items-center justify-between">
         <div>
-          <img className="w-[170px] cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110" src={Logo} alt="Logo" />
+          <img className="w-[170px] cursor-pointer" src={Logo} alt="Logo" />
         </div>
         <div className="hidden md:flex flex-1 ml-[150px] justify-center">
           <ul className="flex space-x-4 ">
             <li className="text-black p-2 font-semibold cursor-pointer relative group hover:text-gray-700">
               О проекте
-              <span className="absolute left-1/2 bottom-0 w-full h-0.5 bg-black transform -translate-x-1/2 scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+              <span className="absolute left-1/2 bottom-0 w-full h-[1px] bg-black transform -translate-x-1/2 scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
             </li>
             <li className="text-black p-2 font-semibold cursor-pointer relative group hover:text-gray-700">
               О компании
-              <span className="absolute left-1/2 bottom-0 w-full h-0.5 bg-black transform -translate-x-1/2 scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+              <span className="absolute left-1/2 bottom-0 w-full h-[1px] bg-black transform -translate-x-1/2 scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
             </li>
             <li className="text-black p-2 font-semibold cursor-pointer relative group hover:text-gray-700">
               Тарифы
-              <span className="absolute left-1/2 bottom-0 w-full h-0.5 bg-black transform -translate-x-1/2 scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+              <span className="absolute left-1/2 bottom-0 w-full h-[1px] bg-black transform -translate-x-1/2 scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
             </li>
           </ul>
         </div>
@@ -132,7 +132,7 @@ const Layout = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="#28a18f"
-              className="size-6"
+              className="size-5 hover:animate-vibrate-once"
             >
               <path
                 strokeLinecap="round"
@@ -142,7 +142,6 @@ const Layout = () => {
             </svg>
             +998 71 200 11 33
           </a>
-
           <button
             onClick={() => (window.location.href = "https://gohouse.uz")}
             className="hover:bg-slate-200 p-2 rounded-2xl text-[#28a18f] font-medium border-2 transition-transform ease-in-out transform border-[#28a18f] hidden md:block"
@@ -229,27 +228,24 @@ const Layout = () => {
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </li>
             <div className=" flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="#28a18f"
-              className="size-5 mt-[3px]"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-              />
-            </svg>
-            
-            <a
-            href="tel:+998712001133"
-            className="items-center ml-[6px]"
-          >
-            +998 71 200 11 33
-          </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="#28a18f"
+                className="size-5 mt-[3px]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                />
+              </svg>
+
+              <a href="tel:+998712001133" className="items-center ml-[6px]">
+                +998 71 200 11 33
+              </a>
             </div>
           </ul>
           <div className="p-4">

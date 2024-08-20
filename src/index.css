@@ -2,21 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Call icons */
+@keyframes vibrate {
+  0%, 100% { transform: translate(0); }
+  20%, 60% { transform: translate(-1px, 1px); }
+  40%, 80% { transform: translate(1px, -1px); }
+}
+
+.hover\:animate-vibrate-once:hover {
+  animation: vibrate 0.2s linear 1;
+}
+
+
 /* AboutProject */
-@keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
-  .fade-in-up {
-    animation: fadeInUp 1s ease-out;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
+
+.animate-slide-in {
+  animation: slideInFromRight 1s ease-out;
+}
 
 /* Sistem */
   @keyframes fadeInRight {

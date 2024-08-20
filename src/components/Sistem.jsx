@@ -1,24 +1,54 @@
-import All from "../../public/all.png";
+import Obyect from "../../public/obyekt.png";
+import { useEffect, useState } from 'react';
 
 const Sistem = () => {
+  const [inView, setInView] = useState(false);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.unobserve(entry.target); // Stop observing after the animation starts
+        }
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is visible
+      }
+    );
+
+    const element = document.getElementById('sistem-image');
+    if (element) {
+      observer.observe(element);
+    }
+
+    return () => {
+      if (element) {
+        observer.unobserve(element);
+      }
+    };
+  }, []);
 
   return (
-    <div id="sistem" className="bg-slate-100 flex flex-col md:flex-row items-center justify-around h-auto md:h-[650px] mt-24 md:mt-[170px] mb-24 md:mb-[120px]">
-      <div className="text-center md:text-left md:mt-0 mt-8 md:ml-8">
-        <h2 className="text-green-400 font-semibold text-xl md:text-2xl mb-4">СИСТЕМА ESYS HOUSE</h2>
-        <p className="text-2xl md:text-3xl font-medium mb-4">Востребованный функционал</p>
-        <p className="text-lg md:text-xl opacity-55 font-medium mb-2">
-          Компоненты системы GOHOUSE CRM позволят высвободить драгоценное свободное время.
-        </p>
-        <p className="text-lg md:text-xl opacity-55 font-medium mb-2">
-          GOHOUSE включает в себя целый комплекс средств для автоматизации агентства недвижимости, который позволит Вам быть более продуктивным.
+    <div
+      id="sistem"
+      className="bg-slate-100 flex flex-col md:flex-row items-center justify-center md:justify-between h-auto md:h-[650px] mt-8 md:mt-[170px] mb-8 md:mb-[120px] p-4 md:p-0"
+    >
+      <div className="text-center md:text-left md:ml-8">
+        <h2 className="text-[#28a18f] font-semibold text-2xl md:text-3xl mb-4">
+          ОБЪЕКТЫ
+        </h2>
+        <p className="text-lg md:text-xl w-full md:w-[700px] opacity-55 font-medium mb-2">
+          HOUSELAB разработан для управления как жилыми, так и коммерческими
+          объектами. Будь то офисы, торговые площади, склады или первичное
+          жилье, все эти типы недвижимости легко обрабатываются в системе
+          HOUSELAB. Вы можете добавлять, редактировать и удалять объекты.
         </p>
       </div>
       <img
         id="sistem-image"
-        className="w-full md:w-[600px] h-auto md:h-[350px] mt-8 md:mt-[150px]"
-        src={All}
+        className={`w-full md:w-[600px] h-auto mt-8 md:mt-0 transition-transform duration-1000 ${inView ? 'animate-slide-in' : 'opacity-0'}`}
+        src={Obyect}
         alt="Sistem image"
       />
     </div>
