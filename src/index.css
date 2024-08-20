@@ -47,7 +47,6 @@
   }
   
   /* Prezentation */
-/* index.css or your global CSS file */
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
