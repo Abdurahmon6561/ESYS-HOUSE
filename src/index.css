@@ -47,21 +47,22 @@
   }
   
   /* Prezentation */
-  @keyframes slideUp {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+/* index.css or your global CSS file */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  .slide-up {
-    animation: slideUp 1s ease-out forwards;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 1s ease-out;
+}
+
   /* Animation line */
 /* 1 */
   @keyframes draw {

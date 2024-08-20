@@ -7,7 +7,9 @@ const Prezentation = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsImageVisible(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setIsImageVisible(true);
+        }
       },
       { threshold: 0.1 }
     );
@@ -25,12 +27,12 @@ const Prezentation = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-around mt-[180px] mb-[150px]">
+    <div className="flex flex-col md:flex-row items-center justify-around mt-24 mb-24 p-4 md:p-0">
       <div className="flex flex-col items-center md:items-start md:order-1 order-2 text-center md:text-left">
-        <h1 className="mb-[20px] text-[#28a18f] font-semibold text-2xl">
+        <h1 className="text-[#28a18f] font-semibold text-2xl md:text-3xl mb-4">
           ПРОДАЖА
         </h1>
-        <p className="p-2 w-[700px] text-xl opacity-55 font-medium">
+        <p className="p-2 w-full md:w-[700px] text-lg md:text-xl opacity-55 font-medium">
           Интерактивная таблица новостроек. С помощью удобной и
           многофункциональной шахматки вы мгновенно получаете доступ ко всей
           нужной информации: выбирайте квартиру, устанавливайте цены,
@@ -39,9 +41,7 @@ const Prezentation = () => {
       </div>
       <img
         id="prezentation-image"
-        className={`w-full md:w-[450px] h-auto md:h-[300px] mt-8 md:mt-0 ${
-          isImageVisible ? "slide-up" : ""
-        }`}
+        className={`w-full md:w-[450px] h-auto mt-8 md:mt-0 transition-transform duration-1000 ${isImageVisible ? "slide-in-left" : "opacity-0"}`}
         src={Pre}
         alt="Prezentation image"
       />
