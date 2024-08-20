@@ -9,11 +9,11 @@ const Sistem = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.unobserve(entry.target); // Stop observing after the animation starts
+          observer.unobserve(entry.target); 
         }
       },
       {
-        threshold: 0.1, // Trigger when 10% of the element is visible
+        threshold: 0.1, 
       }
     );
 
