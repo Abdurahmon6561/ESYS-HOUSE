@@ -1,11 +1,39 @@
+import { useEffect, useState } from "react";
 import houseLAb from "../../public/houselab.png";
 import "../index.css";
 
 const AboutProject = () => {
+  const [isImageVisible, setIsImageVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsImageVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const imageElement = document.getElementById("project-image");
+    if (imageElement) {
+      observer.observe(imageElement);
+    }
+
+    return () => {
+      if (imageElement) {
+        observer.unobserve(imageElement);
+      }
+    };
+  }, []);
+
   return (
     <div className="flex flex-col md:flex-row items-center justify-center md:justify-around p-4">
       <img
-        className="mt-8 w-full max-w-[440px] h-auto border-white border-none rounded-lg"
+        id="project-image"
+        className={`mt-8 w-full max-w-[440px] h-auto border-white border-none rounded-lg transition-transform duration-1000 ${
+          isImageVisible ? "slide-in-left" : "opacity-0"
+        }`}
         src={houseLAb}
         alt="Project Image"
       />
