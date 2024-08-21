@@ -23,6 +23,7 @@ const Home = () => {
     }
   };
 
+  
   useEffect(() => {
     const path = document.querySelector(".animate-draw");
     if (path) {
