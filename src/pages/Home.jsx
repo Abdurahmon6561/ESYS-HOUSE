@@ -22,7 +22,7 @@ const Home = () => {
       objectsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  
+
   useEffect(() => {
     const path = document.querySelector(".animate-draw");
     if (path) {
@@ -169,7 +169,7 @@ const Home = () => {
             Войти
           </button>
           <button
-            onClick={() => (window.location.href = "https://gohouse.uz")}
+            onClick={handleScrollToObjects}
             className="bg-[#28a18f] hover:bg-[#197063] p-2 rounded-2xl text-white border-2 transition-transform ease-in-out transform border-[#28a18f] hidden md:block"
           >
             Демо-доступ
@@ -276,7 +276,7 @@ const Home = () => {
               Войти
             </button>
             <button
-              onClick={() => (window.location.href = "https://gohouse.uz")}
+              onClick={handleScrollToObjects}
               className="bg-[#28a18f] hover:bg-[#197063] border-[#28a18f] w-full mt-4 p-2 rounded-2xl text-white border-2 transition-transform ease-in-out transform"
             >
               Демо-доступ
