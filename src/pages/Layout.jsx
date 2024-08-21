@@ -18,7 +18,7 @@ const Layout = () => {
 
   return (
     <div className="w-screen h-screen relative bg-[#f8fcfb]">
-      {/* Background Animation */}
+      {/* Bg Animation */}
       <div className="absolute inset-0 z-0 overflow-hidden mt-[250px] ml-[350px]">
         <svg
           version="1.1"
