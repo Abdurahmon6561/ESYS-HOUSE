@@ -25,10 +25,12 @@ const Home = () => {
   const objectsRef = useRef(null);
 
   const handleScrollToObjects = () => {
+    console.log("Scrolling to objects");
     if (objectsRef.current) {
       objectsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  
 
   return (
     <div>
