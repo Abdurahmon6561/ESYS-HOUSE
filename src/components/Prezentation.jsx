@@ -1,4 +1,4 @@
-import Pre from "../../public/pre.jpg";
+import Pre from "../../public/sale.png";
 import { useEffect, useState } from "react";
 
 const Prezentation = () => {

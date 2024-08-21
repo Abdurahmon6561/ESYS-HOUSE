@@ -1,32 +1,50 @@
-import Objects_image from "../../public/objects.jpg";
+import '../index.css'; // Ensure your CSS file is correctly linked
 
-const Objects = () => {
+const Demo = () => {
   return (
-    <div className="bg-slate-100 flex flex-col md:flex-row items-center justify-around h-auto md:h-[650px] mt-[170px] mb-[120px]">
-      <div className="flex flex-col items-center md:items-start mt-8 md:mt-[150px] order-2 md:order-1">
-        <h1 className="mb-[20px] text-green-400 font-semibold text-2xl text-center md:text-left">ОБЪЕКТЫ</h1>
-        <p className="text-3xl font-medium text-center md:text-left">ESYS HOUSE создан для работы как с жилой,<br /> так и с коммерческой недвижимостью.</p>
-        <p className="p-2 text-xl opacity-55 font-medium text-center md:text-left mt-[30px]">
-          Компоненты системы GOHOUSE CRM позволят высвободить
-        </p>
-        <p className="p-2 text-xl opacity-55 font-medium text-center md:text-left">
-          драгоценное свободное время. GOHOUSE включает в себя целый
-        </p>
-        <p className="p-2 text-xl opacity-55 font-medium text-center md:text-left">
-          комплекс средств для автоматизации агентства недвижимости, который
-        </p>
-        <p className="p-2 text-xl opacity-55 font-medium text-center md:text-left">
-          позволит Вам быть более продуктивным.
-        </p>
+    <div className="flex  flex-col md:flex-row justify-around bg-slate-100 p-8">
+      <div className="mt-[90px] md:mt-[90px] md:mr-[-301px]">
+        <h2 className="text-4xl font-bold mb-4 text-gray-700 text-center">
+          Закажите бесплатную <br /> консультацию по работе <br /> программы!
+        </h2>
       </div>
       <img
-        id="prezentation-image"
-        className={`w-full md:w-[450px] h-auto md:h-[300px] mt-8 md:mt-[150px] order-1 md:order-2`}
-        src={Objects_image}
-        alt="Prezentation image"
+        src="https://ritm.uz/static/media/arrow.324d7eda.svg"
+        className="arrow-icon hidden md:block mt-[24px]"
+        alt="arrow"
       />
+      <div className="h-[250px] w-[370px] mt-[40px] md:ml-[-293px] ">
+        <div className="mb-4">
+          <label htmlFor="name" className="block mb-2 opacity-80">
+            Ваше имя
+          </label>
+          <input
+            className="outline-none border-2 w-[360px] p-3 rounded-lg"
+            type="text"
+            id="name"
+            placeholder="Ваше имя"
+          />
+        </div>
+        <div className="mb-4">
+          <label htmlFor="number" className="block mb-2 opacity-80">
+            Номер телефона
+          </label>
+          <input
+            className="outline-none border-2 w-[360px] p-3 rounded-lg"
+            type="number"
+            id="number"
+            placeholder="Номер телефона"
+          />
+        </div>
+        <button
+          className="font-medium bg-[#28a18f] hover:bg-[#197063] w-[360px] mt-2 p-3 rounded-xl text-white"
+          type="button"
+        >
+          Отправить заявку
+        </button>
+      </div>
     </div>
   );
 };
 
-export default Objects;
+export default Demo;

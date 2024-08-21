@@ -13,6 +13,15 @@
   animation: vibrate 0.2s linear 1;
 }
 
+/* Arrow */
+.arrow-icon {
+  width: 70px; /* Adjust the size as needed */
+  height: 70px; /* Adjust the size as needed */
+  filter: invert(32%) sepia(85%) saturate(5200%) hue-rotate(80deg) brightness(90%) contrast(95%);
+}
+
+
+
 
 /* AboutProject */
 @keyframes slideInFromRight {

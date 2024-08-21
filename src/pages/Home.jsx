@@ -3,7 +3,8 @@ import AboutProject from "../components/AboutProject";
 import Sistem from "../components/Sistem";
 import Prezentation from "../components/Prezentation";
 import Objects from "../components/Objects";
-import Sale from "../components/Sale";
+import Footer from "../components/Footer";
+import Reviews from "../components/Reviews";
 
 
 
@@ -17,9 +18,10 @@ const Home = () => {
         <AboutProject />
         <Sistem/>
         <Prezentation/>
+        <Reviews/>
         <Objects/>
-        <Sale/>
       </div>
+    <Footer/>
     </div>
     </div>
   );
