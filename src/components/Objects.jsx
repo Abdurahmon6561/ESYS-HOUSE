@@ -1,4 +1,4 @@
-import '../index.css'; // Ensure your CSS file is correctly linked
+import '../index.css';
 
 const Demo = () => {
   return (
