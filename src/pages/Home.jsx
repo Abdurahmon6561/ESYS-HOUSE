@@ -13,15 +13,6 @@ const Home = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const path = document.querySelector(".animate-draw");
-    if (path) {
-      const length = path.getTotalLength();
-      path.style.strokeDasharray = length;
-      path.style.strokeDashoffset = length;
-    }
-  }, []);
-
   // Move to Objects
   const objectsRef = useRef(null);
 
@@ -31,6 +22,16 @@ const Home = () => {
       objectsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  
+  useEffect(() => {
+    const path = document.querySelector(".animate-draw");
+    if (path) {
+      const length = path.getTotalLength();
+      path.style.strokeDasharray = length;
+      path.style.strokeDashoffset = length;
+    }
+  }, []);
+
   
 
   return (
