@@ -22,6 +22,7 @@ const Home = () => {
     }
   }, []);
 
+  // Move to Objects
   const objectsRef = useRef(null);
 
   const handleScrollToObjects = () => {
