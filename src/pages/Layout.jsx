@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Logo from "../../public/logo.svg";
 import Header from "../components/Header";
 import "../index.css";
-import "./animation.css"; // Import the animation CSS file
+import "./animation.css";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
