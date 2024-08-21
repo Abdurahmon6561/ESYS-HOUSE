@@ -52,29 +52,39 @@ const Footer = () => {
       </div>
       <hr className="opacity-55 mt-[30px] w-full" />
       <div className="flex flex-col md:flex-row justify-between items-center mt-4">
-        <h3 className="text-white md:ml-[100px] text-sm md:text-[17px] opacity-80">
+        <h3 className="text-white hidden md:block md:ml-[100px] text-sm md:text-[17px] opacity-80">
           © 2024 - 2028 Copyright. HouseLab. Все права защищены.
         </h3>
+
         <div className="flex space-x-4 md:mr-[160px] mt-2 md:mt-0 mb-[20px]">
-          <button 
+          <button
             onClick={() => (window.location.href = "https://t.me/endless_live")}
             className="hover:scale-110 transition-transform w-[40px] h-[40px] bg-[#28a18f] rounded-full flex items-center justify-center"
           >
             <img src={Telegram} alt="icon" className="h-[30px]" />
           </button>
           <button
-            onClick={() => (window.location.href = "https://www.instagram.com/abdukadirovv._a/")}
+            onClick={() =>
+              (window.location.href =
+                "https://www.instagram.com/abdukadirovv._a/")
+            }
             className="hover:scale-110 transition-transform w-[40px] h-[40px] bg-[#28a18f] rounded-full flex items-center justify-center"
           >
             <img src={Instagram} alt="icon" className="h-[22px]" />
           </button>
           <button
-            onClick={() => (window.location.href = "https://www.facebook.com/profile.php?id=100089769144656")}
+            onClick={() =>
+              (window.location.href =
+                "https://www.facebook.com/profile.php?id=100089769144656")
+            }
             className="hover:scale-110 transition-transform w-[40px] h-[40px] bg-[#28a18f] rounded-full flex items-center justify-center"
           >
             <img src={Facebook} alt="icon" className="h-[25px]" />
           </button>
         </div>
+        <h3 className="text-white md:hidden text-sm mb-[30px] opacity-80">
+          © 2024 - 2028 Copyright. HouseLab. Все права защищены.
+        </h3>
       </div>
     </div>
   );
