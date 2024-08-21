@@ -23,11 +23,11 @@ const Footer = () => {
                 alt="image"
                 className="mt-2 mr-[12px] h-[20px] md:h-[30px]"
               />
-              <h3 className="text-base md:text-xl font-normal text-white">
+              <h3 className=" md:mr-[190px] text-base md:text-xl font-normal text-white">
                 Узбекистан, Ташкент, Мизро-Улугбекский район
               </h3>
             </div>
-            <div className="flex flex-col md:flex-row md:justify-around">
+            <div className=" md:ml-[-110px] flex flex-col md:flex-row md:justify-around">
               <div className="flex items-center mb-2 md:mb-0">
                 <img src={Phone_image} alt="image" className="h-[20px]" />
                 <a
@@ -52,10 +52,10 @@ const Footer = () => {
       </div>
       <hr className="opacity-55 mt-[30px] w-full" />
       <div className="flex flex-col md:flex-row justify-between items-center mt-4">
-        <h3 className="text-white text-sm md:text-[17px] opacity-80">
+        <h3 className="text-white md:ml-[100px] text-sm md:text-[17px] opacity-80">
           © 2024 - 2028 Copyright. HouseLab. Все права защищены.
         </h3>
-        <div className="flex space-x-4 mt-2 md:mt-0 mb-[20px]">
+        <div className="flex space-x-4 md:mr-[160px] mt-2 md:mt-0 mb-[20px]">
           <button 
             onClick={() => (window.location.href = "https://t.me/endless_live")}
             className="hover:scale-110 transition-transform w-[40px] h-[40px] bg-[#28a18f] rounded-full flex items-center justify-center"
